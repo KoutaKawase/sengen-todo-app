@@ -89,6 +89,10 @@
         document.getElementById('edit-area').appendChild(doneButton);
     }
 
+    if (storage.getItem('1') != null && printTodoArea.innerHTML === '') {
+        const result = getTodoFromStorage('1');
+        printTodo(result['content'], result['limitDate']);
+    }
     createTodoButton.onclick = () => {
         //保存
         saveTodoToStorage();
@@ -97,8 +101,8 @@
         //画面に表示
         printTodo(result['content'], result['limitDate']);
         //編集(編集と削除)ボタンを作成
-        createEditButton();
-        createDeleteButton();
-        createDoneButton();
+        // createEditButton();
+        // createDeleteButton();
+        // createDoneButton();
     };
 })();
