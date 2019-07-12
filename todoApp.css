@@ -26,7 +26,7 @@ p {
 button {
     /* border: none;
     color: #9facbd; */
-    display: inline-block;
+    display: block;
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 3px;
@@ -34,4 +34,32 @@ button {
     color: #FFFFFF;
     background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
     transition: .4s;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+
+
+#edit-area {
+    display: flex;
+}
+
+#edit {
+    margin-right: 0px;
+    background-image: linear-gradient(45deg, #8086F2 0%, #8086F2 100%);
+}
+
+#delete {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(248,80,50,1) 100%);
+}
+
+#done {
+    margin-left: 0px;
+    background-image: linear-gradient(45deg, #7D8491 0%, #7D8491 100%);
+}
+#print-todo-area {
+    margin-bottom: 0px;
 }

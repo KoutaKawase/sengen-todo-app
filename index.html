@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>宣言付きTodoアプリ</title>
+    <title>宣言！Todo完遂アプリ</title>
     <link rel="stylesheet" href="./todoApp.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
@@ -15,8 +15,13 @@
     <p>ToDoを登録する</p>
     <div id='create-todo-area'>
         <input type="text" id='create-todo-input' placeholder='例) 課題をやる'>
+        <p>期限を設定しよう</p>
+        <p>▼ ボタンでカレンダー指定できます</p>
+        <input type='date' id='limit-date' required>
         <button id='create-todo-button'>登録</button>
     </div>
+    <p id='print-todo-area'></p>
+    <div id='edit-area'></div>
     <script src="./todoApp.js"></script>
 </body>
 
